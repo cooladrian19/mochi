@@ -1,0 +1,14 @@
+.user-chat-info p{
+    font-weight: 300;
+    font-size: 15px;
+}
+.chats-header{
+    color: rgb(255, 252, 245);
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+
+}

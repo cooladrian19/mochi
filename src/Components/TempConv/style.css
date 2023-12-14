@@ -1,0 +1,37 @@
+.temp-wrapper {
+    flex: 2;
+    background-color: rgb(207, 199, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.temp-msg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    p{
+        font-size: 17px;
+        font-weight: 400;
+    }
+   
+}
+
+.temp-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 25px;
+    color: rgb(59, 63, 70);
+
+
+    
+
+    img {
+        width: 70px;
+    }
+}

@@ -1,15 +1,24 @@
 import React from 'react'
 import { Link } from "react-router-dom";  
 import "./style.css";
-import MochiLogo from "../../assets/mochi.png";
+import WhiteMochiLogo from "../../assets/white-mochi.png";
 
-export default function Login() {
+export default function Login({onLogin}) {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const email = e.target["login-email"].value;
+    const password = e.target["login-password"].value;
+    onLogin(email, password);
+  };
+
   return (
     <div className="login-container">
-      <div className="mochi-logo-container">
-        <Link to="/home" className="mochi-logo"><img src={MochiLogo} /></Link>
-      </div>
-      <form className="login-field" >
+     
+        <Link to="/home" className="mochi-logo"><img src={WhiteMochiLogo} /><span>mochi</span></Link>
+        
+    
+      <form className="login-field" onSubmit={handleSubmit} >
         <div className="login-section-container">
           <label>Email:</label>
           <input

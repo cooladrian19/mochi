@@ -1,0 +1,5 @@
+.sidebar-wrapper {
+    flex: 0.5;
+    border-right: 2px solid rgb(238, 233, 212); 
+    background-color: rgb(146, 136, 121);
+}
